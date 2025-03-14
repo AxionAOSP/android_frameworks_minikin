@@ -186,6 +186,7 @@ cc_library {
         },
     },
 
+    lto_Instr100: true,
     afdo: true,
 
 }
