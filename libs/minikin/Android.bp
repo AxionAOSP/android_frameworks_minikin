@@ -70,6 +70,9 @@ cc_library_static {
 cc_library {
     name: "libminikin",
     host_supported: true,
+    cflags: [
+        "-O3",
+    ],
     srcs: [
         "BidiUtils.cpp",
         "CmapCoverage.cpp",
