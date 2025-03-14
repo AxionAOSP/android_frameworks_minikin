@@ -151,6 +151,10 @@ cc_library {
                 "libflags_rust_cpp_bridge",
             ],
         },
+        android_arm64: {
+             cflags: ["-fsplit-machine-functions"],
+             ldflags: ["-fsplit-machine-functions"],
+        },
         host: {
             shared_libs: [
                 "libicui18n",
